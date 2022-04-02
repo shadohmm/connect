@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "878967856258",
+    "project_id": "social-media-demo-cf706",
+    "storage_bucket": "social-media-demo-cf706.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878967856258:android:c4081007adfa6aabc2289b",
+        "android_client_info": {
+          "package_name": "com.social.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878967856258-834gqlhjqsp26h634jmruln3in295uah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpBGZylbeUOb50CqSsDdjd-yh6mIi8WVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878967856258-834gqlhjqsp26h634jmruln3in295uah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

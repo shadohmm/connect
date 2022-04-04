@@ -1,5 +1,7 @@
 import 'package:connect/models/contacts.dart';
-import 'package:connect/pages/add_contacts_page.dart';
+
+import 'package:connect/pages/add_post.dart';
+import 'package:connect/pages/post.dart';
 import 'package:connect/services/authentication_service.dart';
 import 'package:connect/services/upload_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -30,6 +32,42 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    //custom mine*****************/
+
+    //******************my code */
+//    return MultiProvider(
+//       //provider paer to remove return directly child:material remove multiprov
+
+//       providers: [
+//         ChangeNotifierProvider<AuthenticationService>(
+//             create: (context) => AuthenticationService(FirebaseAuth.instance)),
+//         Provider<UploadService>(create: (context) => UploadService()),
+//         Provider<DownloadService>(create: (context) => DownloadService()),
+//         Provider<Contact>(
+//           create: (context) => Contact(),
+//         ),
+//         StreamProvider<User?>(
+//           create: (context) =>
+//               context.read<AuthenticationService>().authStateChanges,
+//           initialData: null,
+//         ),
+//       ],
+//       //end of provider
+//       child: MaterialApp(
+//         debugShowCheckedModeBanner: false,
+//         title: 'Flutter Database',
+//         theme: ThemeData(
+//           primaryColor: Colors.deepPurple,
+//           // accentColor: Colors.red[100];
+//         ),
+//         home: Post(),
+//       ),
+//     );
+//   }
+// }
+
+    //custom mine************************
+
     //theam related start
 
     return MultiProvider(
@@ -56,7 +94,7 @@ class MyApp extends StatelessWidget {
         home: Consumer<User?>(builder: (context, value, child) {
           final firebaseUser = context.watch<User?>();
           if (firebaseUser != null) {
-            return const AddContacts();
+            return const Post();
           } else {
             return const SignIn();
           }
@@ -67,4 +105,3 @@ class MyApp extends StatelessWidget {
 }
 
 //therm matter starts
-
